@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>T2B&nbsp;-&nbsp;Home</title>
+  <link rel="icon" href="images/website_logo.png" type="images/png"/>
+  <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">TAP TO BUILD</div>
+    <div class="nav-links">
+      <a href="#1">Home</a>
+      <a href="#features">Features</a>
+      <a href="#how">How it Works</a>
+      <a href="#about">About</a>
+        <a href="admin_login.html">Admin</a>
+      <a href="login.html" class="nav-account" id="nav-account-btn">Account</a>
+      <a href="profile.html" class="nav-profile" id="nav-profile-icon" style="display: none; flex-shrink: 0;">
+        <span class="nav-profile-badge" id="nav-profile-badge"></span>
+        <img id="nav-profile-image" style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; margin: 0; padding: 0; border: none;">
+        <svg id="nav-profile-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <div id="auth-toast" class="auth-toast" role="status" aria-live="polite">
+    <div class="auth-toast__icon">T</div>
+    <div class="auth-toast__copy">
+      <p class="auth-toast__eyebrow">Tap to Build says</p>
+      <p class="auth-toast__title">Please log in first</p>
+      <p class="auth-toast__body">Sign in to keep your progress and start building.</p>
+      <div class="auth-toast__actions">
+        <a class="auth-toast__cta" href="login.html">Login</a>
+      </div>
+    </div>
+    <button class="auth-toast__close" aria-label="Dismiss message">×</button>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero" id="1">
+    <div class="grid-background"></div>
+    <div class="hero-content">
+      <h1>Build websites. Your way. Instantly.</h1>
+      <p>No code needed — design, generate, and publish in seconds.</p>
+      <div class="hero-buttons">
+        <a href="profile_setup.html" class="btn-primary">Start Building →</a>
+        <a href="sign_up.html" class="btn-secondary">Create Account</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="images/code.png" alt="Learn Without Code" class="feature-icon">
+        <h3>Learn Without Code</h3>
+        <p>Master app-building concepts through intuitive visuals instead of complex programming. Tap, drag, and build while understanding the fundamentals step by step—no prior knowledge required.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/paint.png" alt="Customize Your Design" class="feature-icon">
+        <h3>Customize Your Design</h3>
+        <p>Choose from clean layouts, color palettes, and UI components. Personalize every screen to reflect your brand and create a unique experience your users will love.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/eval.png" alt="Evaluate Your Work" class="feature-icon">
+        <h3>Evaluate Your Work</h3>
+        <p>Preview your app in real-time, test features instantly, and refine your design before publishing. See exactly how your app performs at every stage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="showcase" >
+    <h2>Your App. Your Vision.</h2>
+    <p>Preview what your generated app might look like</p>
+    <div class="showcase-container">
+      <div class="showcase-box">
+        <div class="showcase-header">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div style="padding:0 5px; display:flex; align-items:center; justify-content:center;">
+          <video src="images/narone.mov" alt="App preview" class="preview-image" muted playsinline preload="metadata"></video>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+   <section class="howitworks" id="how">
+  <h2>How It Works</h2>
+  <p class="subtitle">Build your app in four simple steps.</p>
+
+  <div class="how-grid">
+
+    <div class="how-card">
+      <div class="icon-wrap">1</div>
+      <h3>Enter Your Info</h3>
+      <p>Start by adding your website name, description, and purpose.</p>
+    </div>
+
+    <div class="how-card">
+      <div class="icon-wrap">2</div>
+      <h3>Choose Color & Logo</h3>
+      <p>Select your brand palette and upload your logo.</p>
+    </div>
+
+    <div class="how-card">
+      <div class="icon-wrap">3</div>
+      <h3>Configure Features</h3>
+      <p>Pick pages, structure, and customize your layout.</p>
+    </div>
+
+    <div class="how-card">
+      <div class="icon-wrap">4</div>
+      <h3>Evaluate Your Work</h3>
+      <p>Preview instantly and adjust before generating.</p>
+    </div>
+
+  </div>
+</section>
+  <!-- Footer -->
+  <footer id="about">
+    <div class="footer-content">
+      <div class="footer-section footer-brand">
+        <div class="footer-logo-container">
+          <!-- <img src="images/website_logo.png" alt="Tap to Build" class="footer-logo-img"> -->
+          <span class="footer-logo-text">TAP TO BUILD</span>
+        </div>
+        <p class="footer-tagline">Empowering everyone to build beautiful apps without code. Turn your ideas into reality in minutes.</p>
+        <div class="social-links">
+          <a href="https://github.com/Narjes-almasri/frontend" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 24 24"
+     fill="#000000"
+     aria-label="GitHub">
+          <path   d="M12 0.297c-6.63 0-12 5.373-12 12 0 5.303 
+          3.438 9.8 8.205 11.385 0.6 0.113 0.82-0.258 
+          0.82-0.577 0-0.285-0.01-1.04-0.015-2.04
+          -3.338 0.724-4.042-1.61-4.042-1.61
+          -0.546-1.387-1.333-1.757-1.333-1.757
+          -1.089-0.745 0.083-0.729 0.083-0.729
+          1.205 0.085 1.84 1.236 1.84 1.236
+          1.07 1.835 2.809 1.305 3.495 0.998
+          0.108-0.776 0.418-1.305 0.762-1.605
+          -2.665-0.305-5.467-1.334-5.467-5.93
+          0-1.31 0.468-2.381 1.235-3.221
+          -0.135-0.303-0.54-1.523 0.117-3.176
+          0 0 1.008-0.322 3.301 1.23
+          0.957-0.266 1.983-0.399 3.003-0.404
+          1.02 0.005 2.047 0.138 3.006 0.404
+          2.291-1.552 3.297-1.23 3.297-1.23
+          0.659 1.653 0.254 2.873 0.119 3.176
+          0.77 0.84 1.234 1.911 1.234 3.221
+          0 4.609-2.807 5.624-5.479 5.921
+          0.43 0.371 0.823 1.102 0.823 2.222
+          0 1.606-0.014 2.898-0.014 3.293
+          0 0.319 0.216 0.694 0.825 0.576
+          C20.565 22.092 24 17.592 24 12.297
+          c0-6.627-5.373-12-12-12z"/>
+    </svg>
+    </a>
+          <a href="https://github.com/Narjes-almasri/GP" aria-label="LinkedIn">in</a>
+          <a href="https://apps.apple.com/jo/app/night-sky/id475772902" aria-label="Launch App" class="social-app-link">
+            <img src="images/website_logo.png" alt="Launch App" class="social-logo">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="generation.html">App Generator</a></li>
+          <li><a href="discover.html">Discover Apps</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="templates.html">Templates</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="press.html">Press Kit</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-copyright">© 2025 Tap to Build.</div>
+      <div class="footer-copyright">Made with ❤️ in Jordan</div>
+    </div>
+  </footer>
+</body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".how-card");
+  const icons = document.querySelectorAll(".icon-wrap");
+  const previewVideo = document.querySelector(".preview-image");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("animate");
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(el => observer.observe(el));
+  icons.forEach(el => observer.observe(el));
+
+  // Play/pause showcase video on hover
+  if (previewVideo) {
+    previewVideo.playbackRate = 2;
+    previewVideo.addEventListener("mouseenter", () => {
+      previewVideo.currentTime = 0;
+      const playPromise = previewVideo.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+      }
+    });
+    previewVideo.addEventListener("mouseleave", () => {
+      previewVideo.pause();
+    });
+  }
+
+  /* ---------------------------------------------
+     HOVER ANIMATION — REPLAY THE SAME EFFECT EXACTLY
+  --------------------------------------------- */
+  cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+      // remove previous animation
+      card.classList.remove("hover-replay", "animate");
+
+      // force browser to reset animation
+      void card.offsetWidth;
+
+      // apply replay animation
+      card.classList.add("hover-replay");
+    });
+
+    card.addEventListener("mouseleave", () => {
+      // remove strong hover styles smoothly
+      card.style.transition = "transform 0.3s, box-shadow 0.3s";
+      card.style.transform = "translateY(0) scale(1)";
+      card.style.boxShadow = "none";
+
+      setTimeout(() => {
+        card.style.transition = "";
+      }, 300);
+    });
+  });
+  
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const step1 = document.querySelector(".how-card:nth-child(1)");
+  const icon1 = step1.querySelector(".icon-wrap");
+
+  step1.addEventListener("mouseenter", () => {
+    icon1.style.opacity = "1";
+    icon1.style.transform = "scale(1)";
+    icon1.style.animation = "stepNumberPop 0.7s ease-out forwards";
+  });
+
+  step1.addEventListener("mouseleave", () => {
+    icon1.style.opacity = "0";
+    icon1.style.transform = "scale(0.4)";
+    icon1.style.animation = "none";
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".how-card");
+
+  cards.forEach(card => {
+    const icon = card.querySelector(".icon-wrap");
+
+    card.addEventListener("mouseenter", () => {
+      icon.style.opacity = "1";
+      icon.style.transform = "scale(1)";
+      icon.style.animation = "stepNumberPop 0.7s ease-out forwards";
+    });
+
+    card.addEventListener("mouseleave", () => {
+      icon.style.opacity = "0";
+      icon.style.transform = "scale(0.4)";
+      icon.style.animation = "none";
+    });
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const startButton = document.querySelector(".btn-primary[href='profile_setup.html']");
+  const toast = document.getElementById("auth-toast");
+  const closeToastBtn = toast ? toast.querySelector(".auth-toast__close") : null;
+  let toastTimer;
+  if (!startButton) return;
+
+  const hideToast = () => {
+    if (!toast) return;
+    toast.classList.remove("show");
+    if (toastTimer) clearTimeout(toastTimer);
+  };
+
+  const showToast = () => {
+    if (!toast) return;
+    toast.classList.add("show");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(hideToast, 3200);
+  };
+
+  if (closeToastBtn) closeToastBtn.addEventListener("click", hideToast);
+
+  startButton.addEventListener("click", (event) => {
+    const isLoggedIn = sessionStorage.getItem("loggedIn") === "true";
+    if (!isLoggedIn) {
+      event.preventDefault();
+      showToast();
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const isLoggedIn = sessionStorage.getItem("loggedIn") === "true";
+  const accountBtn = document.getElementById("nav-account-btn");
+  const profileIcon = document.getElementById("nav-profile-icon");
+  const profileImage = document.getElementById("nav-profile-image");
+  const profileSvg = document.getElementById("nav-profile-svg");
+  const profileBadge = document.getElementById("nav-profile-badge");
+
+  if (isLoggedIn && accountBtn && profileIcon) {
+    accountBtn.style.display = "none";
+    profileIcon.style.display = "flex";
+    
+    // Check if user has uploaded a profile image
+    const uploadedImage = sessionStorage.getItem("profileImage");
+    if (uploadedImage) {
+      profileImage.src = uploadedImage;
+      profileImage.style.display = "block";
+      profileSvg.style.display = "none";
+    } else {
+      profileImage.style.display = "none";
+      profileSvg.style.display = "block";
+    }
+    
+    // Show notification badge if there's a pending admin evaluation
+    const hasEvaluation = sessionStorage.getItem("adminEvaluationRequested") === "true";
+    if (hasEvaluation && profileBadge) {
+      profileBadge.classList.add("show");
+    }
+  }
+});
+</script>
