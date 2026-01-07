@@ -21,7 +21,7 @@
 
 > 🎓 **Graduation Project Note**  
 > This web platform is part of our graduation project. The complete project includes:
-> - **Tap to Build** (Web Platform) - *Built by [Your Name] & [Friend's Name]*
+> - **Tap to Build** (Web Platform) - *Built by me [@Narjes-almasri] & [Friend's Name]*
 > - **Refqa** (Mobile App) - *Built by [Colleague 1], [Colleague 2], [Colleague 3]*
 
 ---
