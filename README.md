@@ -52,7 +52,7 @@ This hands-on approach bridges the gap between theory and practice, allowing lea
 
 1. **📚 Learn** core web concepts in the Refqa mobile app
 2. **🛠️ Practice** by building real projects in Tap to Build
-3. **🚀 Deploy** professional landing pages for actual businesses
+<!-- 3. **🚀 Deploy** professional landing pages for actual businesses -->
 4. **🎓 Master** web development through hands-on experience
 
 This creates a complete learning-to-earning pipeline for aspiring web developers.
@@ -68,13 +68,13 @@ This creates a complete learning-to-earning pipeline for aspiring web developers
 ### 🎨 **Hands-On Builder**
 - Step-by-step guided workflow
 - Real-time preview as you build
-- Apply concepts learned in Refqa
+<!-- - Apply concepts learned in Refqa -->
 - No-code friendly interface
 
 ### 🔐 **Secure Platform**
 - Bcrypt password hashing
 - Session management
-- Integrated with Refqa ecosystem
+<!-- - Integrated with Refqa ecosystem -->
 
 </td>
 <td width="50%">
@@ -248,7 +248,7 @@ npm run validate
 - 📋 **Complete:** `full-site-data.example.json`
 
 ---
-
+<!-- 
 ## 🌐 Deployment
 
 ### Frontend (Static Hosting)
@@ -284,11 +284,11 @@ Simply point your hosting service to the `Frontend/` directory.
 1. **Keep Express Server** - Deploy as-is to any Node.js hosting
 2. **Go Serverless** - Migrate to AWS Lambda, Vercel Functions, or Netlify Functions
 
-📚 See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed migration guides.
+📚 See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed migration guides. -->
 
----
+<!-- --- -->
 
-## ⚙️ Configuration
+<!-- ## ⚙️ Configuration
 
 ### Development Mode
 
@@ -300,11 +300,11 @@ app.use(cors({
   origin: 'https://yourdomain.com', // Replace with your domain
   credentials: true
 }));
-```
+``` -->
 
-### Authentication Fallback
+<!-- ### Authentication Fallback
 
-If remote auth endpoints are unavailable, the app automatically falls back to local Express endpoints (`/api/login`, `/api/signup`).
+If remote auth endpoints are unavailable, the app automatically falls back to local Express endpoints (`/api/login`, `/api/signup`). -->
 
 ---
 
@@ -363,7 +363,7 @@ Ensure `sessionStorage` is enabled in your browser and not in private/incognito 
 <strong>📱 Refqa Mobile App</strong><br><br>
 <em>Educational Platform Development</em><br>
 <sub>Learning paths, rankings, community features</sub><br><br>
-👤 <a href="https://github.com/colleague-username"><strong>Colleague Name</strong></a>
+👤 <a href="https://github.com/AmrHAlali"><strong>Amr Alali</strong></a>
 <br><br>
 </td>
 <td align="center" width="33%">
@@ -371,7 +371,7 @@ Ensure `sessionStorage` is enabled in your browser and not in private/incognito 
 <strong>🌐 Tap to Build</strong><br><br>
 <em>Web Training Platform</em><br>
 <sub>Hands-on builder, templates, live preview</sub><br><br>
-👥 <a href="https://github.com/Narjes-almasri"><strong>Narjes Almasri</strong></a> & <a href="https://github.com/friend-username"><strong>Friend Name</strong></a>
+👥 <a href="https://github.com/Narjes-almasri"><strong>Narjes Almasri</strong></a> & <a href="https://github.com/LeenAlmahthi"><strong>Leen Almahthi</strong></a>
 <br><br>
 </td>
 <td align="center" width="33%">
@@ -379,27 +379,11 @@ Ensure `sessionStorage` is enabled in your browser and not in private/incognito 
 <strong>🔧 Backend Infrastructure</strong><br><br>
 <em>Database & API Development</em><br>
 <sub>Unified backend for both platforms</sub><br><br>
-👤 <a href="https://github.com/backend-username"><strong>Backend Dev Name</strong></a>
+👤 <a href="https://github.com/."><strong>Mahmoud-zabout</strong></a>
 <br><br>
 </td>
 </tr>
 </table>
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-Special thanks to:
-- Our project advisors and professors for their guidance
-- The entire Refqa team for the collaborative spirit
-- Beta testers who provided valuable feedback
-- Everyone who supported us throughout this journey
 
 ---
 
