@@ -1,71 +1,339 @@
-![Tap to Build](images/website_logo.png)
+<div align="center">
 
-# Tap to Build
+# 🚀 Tap to Build
 
-<img src="assets/output.gif" width="600">
+### *Build Beautiful Landing Pages in Minutes*
 
-Tap to Build is a browser-based experience for assembling small business landing pages. Users move through signup/login, profile capture, branding (palette + logo), content editing, real-time preview, and final export. The backend is a lightweight Express API that stores users and submitted site configurations as JSON.
+<img src="Frontend/assets/output.gif" width="700" alt="Tap to Build Demo">
 
-## Final Result
-<img src="assets/output2.gif" width="600">
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.x-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-## Features
-- Multi-step builder: profile setup, app setup, palette selection, logo creation/upload, content editing, live build preview, final preview
-- Local auth API with bcrypt hashing plus hosted auth calls in the UI for quick demos
-- Session-backed state collection composed into a single site-config payload
-- Schema validation via Ajv with ready-to-run sample payloads
-- Admin-focused pages for reviewing saved sites and evaluations
+[Features](#-features) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Deployment](#-deployment)
 
-## Repo Layout
-- Frontend flows: [sign_up.html](sign_up.html), [login.html](login.html), [profile_setup.html](profile_setup.html), [app_setup.html](app_setup.html), [color_palette.html](color_palette.html), [generation.html](generation.html), [build_preview.html](build_preview.html), [final_preview.html](final_preview.html), [home_page.html](home_page.html)
-- Admin pages: [admin_login.html](admin_login.html), [admin_dashboard.html](admin_dashboard.html), [saved_websites.html](saved_websites.html), [saved_evaluations.html](saved_evaluations.html)
-- Backend API: [server.js](server.js) (Express static hosting + JSON-backed endpoints)
-- Data utilities: [data-collector.js](data-collector.js) (session aggregation) and [validate-config.js](validate-config.js) (schema check)
-- Schema and samples: [site-config.schema.json](site-config.schema.json), [site-config.example.json](site-config.example.json), [full-site-data.example.json](full-site-data.example.json)
-- Architecture notes: [ARCHITECTURE.md](ARCHITECTURE.md)
+---
 
-## Quick Start
-Requirements: Node.js 18+.
+</div>
 
+## 📖 About
+
+**Tap to Build** is an intuitive, browser-based platform that empowers small businesses to create professional landing pages without any coding knowledge. Through a seamless multi-step workflow, users can design, customize, and deploy their web presence in minutes.
+
+> 🎓 **Graduation Project Note**  
+> This web platform is part of our graduation project. The complete project includes:
+> - **Tap to Build** (Web Platform) - *Built by [Your Name] & [Friend's Name]*
+> - **Refqa** (Mobile App) - *Built by [Colleague 1], [Colleague 2], [Colleague 3]*
+
+---
+
+## ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎨 **Intuitive Builder**
+- Step-by-step guided workflow
+- Real-time preview as you build
+- No coding required
+
+### 🔐 **Secure Authentication**
+- Bcrypt password hashing
+- Session management
+- Admin dashboard access
+
+</td>
+<td width="50%">
+
+### 🎯 **Complete Customization**
+- Color palette selection
+- Logo creation & upload
+- Content editing tools
+
+### 📊 **Admin Tools**
+- Site management dashboard
+- Evaluation system
+- Analytics overview
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎬 See It In Action
+
+<div align="center">
+<img src="Frontend/assets/output2.gif" width="700" alt="Final Result Showcase">
+
+*From idea to live website in just a few clicks*
+
+</div>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- **Node.js** 18 or higher
+- **npm** (comes with Node.js)
+
+### Installation
 ```bash
+# Navigate to backend directory
+cd Backend
+
+# Install dependencies
 npm install
-npm start  # serves all static files at http://localhost:3000
+
+# Start the development server
+npm start
 ```
 
-- The root [index.html](index.html) redirects to [build_preview.html](build_preview.html) for the builder experience.
-- Static files are served from the repo root; images live in [images/](images).
+🎉 **That's it!** Open your browser and visit `http://localhost:3000`
 
-## API (local Express)
-- POST /api/signup → `{ name, email, password }` creates a user in users.json (email normalized, password hashed)
-- POST /api/login → `{ email, password }` validates credentials
-- POST /api/site-config → full site payload validated against [site-config.schema.json](site-config.schema.json) then appended to site-configs.json
+---
 
-### Using the collector
-The builder pages write user inputs to `sessionStorage`. [data-collector.js](data-collector.js) normalizes everything into a single object:
+## 📂 Project Structure
+```
+Tap-to-Build/
+├── 🎨 Frontend/
+│   ├── 📄 User Flow Pages
+│   │   ├── sign_up.html          # User registration
+│   │   ├── login.html             # Authentication
+│   │   ├── profile_setup.html     # Profile creation
+│   │   ├── app_setup.html         # App configuration
+│   │   ├── color_palette.html     # Brand colors
+│   │   ├── generation.html        # Logo creation
+│   │   ├── build_preview.html     # Live editor
+│   │   └── final_preview.html     # Final review
+│   │
+│   ├── 👨‍💼 Admin Pages
+│   │   ├── admin_login.html       # Admin auth
+│   │   ├── admin_dashboard.html   # Control panel
+│   │   ├── saved_websites.html    # Site manager
+│   │   └── saved_evaluations.html # Reviews
+│   │
+│   ├── 🛠️ Utilities
+│   │   └── data-collector.js      # Session manager
+│   │
+│   └── 🎨 Assets
+│       ├── images/                # Images & icons
+│       └── assets/                # GIFs & media
+│
+└── ⚙️ Backend/
+    ├── server.js                  # Express API
+    ├── validate-config.js         # Schema validator
+    ├── site-config.schema.json    # JSON schema
+    ├── site-config.example.json   # Minimal example
+    └── full-site-data.example.json # Complete example
+```
 
-```js
-const data = SiteDataCollector.collectAllData();
+---
+
+## 🔌 API Reference
+
+### Authentication Endpoints
+
+#### **POST** `/api/signup`
+Create a new user account
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "securePassword123"
+}
+```
+
+#### **POST** `/api/login`
+Authenticate existing user
+```json
+{
+  "email": "john@example.com",
+  "password": "securePassword123"
+}
+```
+
+### Site Configuration
+
+#### **POST** `/api/site-config`
+Submit complete site configuration (validated against JSON schema)
+
+---
+
+## 💾 Data Collection System
+
+The builder automatically saves your progress in the browser's session storage. Our data collector seamlessly aggregates everything into a single configuration.
+
+### Usage Example
+```javascript
+// Collect all session data
+const siteData = SiteDataCollector.collectAllData();
+
+// Submit to backend
 await SiteDataCollector.sendToBackend('/api/site-config');
-// or download
+
+// Or download as JSON
 SiteDataCollector.downloadAsJSON();
 ```
 
-Key storage keys: `userProfile`, `selectedPalette`, `generatedLogo` or `uploadedLogo`, `appName`, `selectedCatalog`, `selectedProductPage`, `pageContent`, `pageImages`, `logoSize`, `logoBorderRadius`, `logoViewerZoom`, `logoViewerOffsetX`, `logoViewerOffsetY`, `adminEvaluationRequested`.
+### Session Storage Keys
 
-## Validation & Samples
-- Run schema validation against bundled examples:
+| Key | Description |
+|-----|-------------|
+| `userProfile` | User profile information |
+| `selectedPalette` | Chosen color scheme |
+| `generatedLogo` / `uploadedLogo` | Logo data |
+| `appName` | Application name |
+| `selectedCatalog` | Product catalog |
+| `pageContent` | Page content data |
+| `pageImages` | Uploaded images |
+| `logoSize`, `logoBorderRadius` | Logo styling |
+| `logoViewerZoom`, `logoViewerOffset*` | Logo viewer state |
 
+---
+
+## ✅ Validation & Testing
+
+Run schema validation against example configurations:
 ```bash
+cd Backend
 npm run validate
 ```
 
-- Minimal payload: [site-config.example.json](site-config.example.json)
-- Full payload: [full-site-data.example.json](full-site-data.example.json)
+**Example Files:**
+- 📝 **Minimal:** `site-config.example.json`
+- 📋 **Complete:** `full-site-data.example.json`
 
-## Deployment Notes
-- Static hosting works on any CDN or object storage (S3, Netlify, Vercel).
-- API can stay as the bundled Express server or be ported to serverless; see [ARCHITECTURE.md](ARCHITECTURE.md) for migration ideas.
+---
 
-## Troubleshooting
-- CORS is open for development in [server.js](server.js); tighten origins before production.
-- If remote auth endpoints in [login.html](login.html) or [sign_up.html](sign_up.html) fail, switch to the local `/api/login` and `/api/signup` endpoints exposed by the Express server.
+## 🌐 Deployment
+
+### Frontend (Static Hosting)
+
+Deploy to any static hosting platform:
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="60" />
+<br><strong>AWS S3</strong>
+</td>
+<td align="center" width="25%">
+<img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" width="60" />
+<br><strong>Netlify</strong>
+</td>
+<td align="center" width="25%">
+<img src="https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg" width="60" />
+<br><strong>Vercel</strong>
+</td>
+<td align="center" width="25%">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60" />
+<br><strong>GitHub Pages</strong>
+</td>
+</tr>
+</table>
+
+Simply point your hosting service to the `Frontend/` directory.
+
+### Backend (API Server)
+
+**Options:**
+1. **Keep Express Server** - Deploy as-is to any Node.js hosting
+2. **Go Serverless** - Migrate to AWS Lambda, Vercel Functions, or Netlify Functions
+
+📚 See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed migration guides.
+
+---
+
+## ⚙️ Configuration
+
+### Development Mode
+
+CORS is configured for open access during development. To prepare for production:
+```javascript
+// In Backend/server.js
+app.use(cors({
+  origin: 'https://yourdomain.com', // Replace with your domain
+  credentials: true
+}));
+```
+
+### Authentication Fallback
+
+If remote auth endpoints are unavailable, the app automatically falls back to local Express endpoints (`/api/login`, `/api/signup`).
+
+---
+
+## 🛠️ Troubleshooting
+
+<details>
+<summary><strong>Port already in use</strong></summary>
+```bash
+# Kill process on port 3000
+npx kill-port 3000
+npm start
+```
+</details>
+
+<details>
+<summary><strong>Authentication not working</strong></summary>
+
+1. Check that the backend server is running
+2. Verify CORS settings in `Backend/server.js`
+3. Check browser console for error messages
+</details>
+
+<details>
+<summary><strong>Data not saving</strong></summary>
+
+Ensure `sessionStorage` is enabled in your browser and not in private/incognito mode.
+</details>
+
+---
+
+## 👥 Team
+
+<table>
+<tr>
+<td align="center">
+<strong>🌐 Tap to Build (Web Platform)</strong><br>
+Built by <a href="#">[Your Name]</a> & <a href="#">[Friend's Name]</a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<strong>📱 Refqa (Mobile App)</strong><br>
+Built by <a href="#">[Colleague 1]</a>, <a href="#">[Colleague 2]</a>, <a href="#">[Colleague 3]</a>
+</td>
+</tr>
+</table>
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+Special thanks to:
+- Our advisors and professors
+- The entire graduation project team
+- Everyone who supported us throughout this journey
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, please consider giving it a star!
+
+**Made with ❤️ for our graduation project**
+
+[Report Bug](https://github.com/yourusername/tap-to-build/issues) • [Request Feature](https://github.com/yourusername/tap-to-build/issues)
+
+</div>

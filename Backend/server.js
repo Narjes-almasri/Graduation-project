@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 const DATA_FILE = path.join(__dirname, 'users.json');
 const SITE_CONFIGS_FILE = path.join(__dirname, 'site-configs.json');
 const SITE_SCHEMA_FILE = path.join(__dirname, 'site-config.schema.json');
+const FRONTEND_DIR = path.join(__dirname, '..', 'Frontend');
 
 app.use(express.json());
 app.use((req, res, next) => {
@@ -19,7 +20,7 @@ app.use((req, res, next) => {
   if (req.method === 'OPTIONS') return res.sendStatus(204);
   next();
 });
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(FRONTEND_DIR));
 
 async function readUsers() {
   try {
