@@ -4,7 +4,7 @@
 
 ### *Build Beautiful Landing Pages in Minutes*
 
-<img src="Frontend/assets/gp.gif" width="700" alt="Tap to Build Demo">
+<img src="Frontend/assets/output.gif" width="700" alt="Tap to Build Demo">
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-5.x-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
