@@ -2,7 +2,7 @@
 
 # 🚀 Tap to Build
 
-### *Master Web Development Through Hands-On Practice*
+<!-- ### *Master Web Development Through Hands-On Practice* -->
 
 <img src="Frontend/assets/output.gif" width="700" alt="Tap to Build Demo">
 
