@@ -4,11 +4,10 @@
 
 ### *Build Beautiful Landing Pages in Minutes*
 
-<img src="Frontend/assets/output.gif" width="700" alt="Tap to Build Demo">
+<img src="Frontend/assets/gp.gif" width="700" alt="Tap to Build Demo">
 
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-4.x-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+[![Express](https://img.shields.io/badge/Express-5.x-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 
 [Features](#-features) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Deployment](#-deployment)
 
@@ -65,7 +64,7 @@
 ## 🎬 See It In Action
 
 <div align="center">
-<img src="Frontend/assets/output2.gif" width="700" alt="Final Result Showcase">
+<img src="Frontend/assets/nar.gif" width="700" alt="Final Result Showcase">
 
 *From idea to live website in just a few clicks*
 
@@ -310,12 +309,6 @@ Built by <a href="#">[Colleague 1]</a>, <a href="#">[Colleague 2]</a>, <a href="
 </td>
 </tr>
 </table>
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
