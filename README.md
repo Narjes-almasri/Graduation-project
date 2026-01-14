@@ -394,7 +394,6 @@ Ensure `sessionStorage` is enabled in your browser and not in private/incognito 
 - [x] Admin dashboard
 - [x] Schema validation
 - [ ] Full Refqa app integration
-- [ ] Single sign-on implementation
 - [ ] Advanced template library
 - [ ] Deployment automation
 - [ ] Multi-language support
