@@ -36,7 +36,7 @@ This hands-on approach bridges the gap between theory and practice, allowing lea
 > 
 > ### 🌐 **Tap to Build** - *The Training Ground*
 > A web platform for learning core web concepts and understanding page structure. Through the website, users can design GUIs in a modern and smooth way without prior experience,
->follow clear step-by-step flows to learn the core components of any page, choose a color palette with a handy tool, design their own logo, understand the main sections of a page, and >enter their data to produce a complete website. An Admin Evaluation option provides feedback on areas for improvement.
+follow clear step-by-step flows to learn the core components of any page, choose a color palette with a handy tool, design their own logo, understand the main sections of a page, and >enter their data to produce a complete website. An Admin Evaluation option provides feedback on areas for improvement.
 > 
 > **Built by:** [@Narjes-almasri](https://github.com/Narjes-almasri) & [@leen-almahthi](https://github.com/LeenAlmahthi)
 > 
