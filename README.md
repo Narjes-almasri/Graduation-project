@@ -35,7 +35,8 @@ This hands-on approach bridges the gap between theory and practice, allowing lea
 > **Built by:** [@Amr-alali](https://github.com/AmrHAlali)
 > 
 > ### 🌐 **Tap to Build** - *The Training Ground*
-> A web platform for learning core web concepts and understanding page structure.
+> A web platform for learning core web concepts and understanding page structure. Through the website, users can design GUIs in a modern and smooth way without prior experience,
+>follow clear step-by-step flows to learn the core components of any page, choose a color palette with a handy tool, design their own logo, understand the main sections of a page, and >enter their data to produce a complete website. An Admin Evaluation option provides feedback on areas for improvement.
 > 
 > **Built by:** [@Narjes-almasri](https://github.com/Narjes-almasri) & [@leen-almahthi](https://github.com/LeenAlmahthi)
 > 
@@ -52,8 +53,7 @@ This hands-on approach bridges the gap between theory and practice, allowing lea
 
 1. **📚 Learn** core web concepts in the Refqa mobile app
 2. **🛠️ Practice** by building real projects in Tap to Build
-<!-- 3. **🚀 Deploy** professional landing pages for actual businesses -->
-4. **🎓 Master** web development through hands-on experience
+3. **🎓 Master** web development through hands-on experience
 
 This creates a complete learning-to-earning pipeline for aspiring web developers.
 
