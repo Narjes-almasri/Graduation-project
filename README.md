@@ -24,7 +24,7 @@ This hands-on approach bridges the gap between theory and practice, allowing lea
 > 🎓 **Graduation Project**  
 > **Refqa** is our comprehensive educational platform graduation project consisting of two integrated components:
 > 
-> ### 📱 **Refqa Mobile App** - *The Learning Hub*
+> ### 📱 **[Refqa Mobile App – The Learning Hub](https://github.com/AmrHAlali/programming-graduation-project)**
 > An educational platform featuring:
 > - 🎯 Interactive learning paths & completions
 > - 🏆 Ranking system & gamification
